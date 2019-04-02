@@ -3,21 +3,22 @@
 <hr>
 
 
-<h4>Contact Form</h4>
+<h3>Contact Form</h3>
 <p>Using sendGrid mail service  </p>
 <p><strong>npm package </strong>:@sendgrid/mail</p>
 
-<h4>Flash Message</h4>
+<h3>Flash Message</h3>
 <p>Using connect-flash & session</p>
 <p><strong>npm package </strong>:connect-flash</p>
 <p><strong>npm package </strong>:express-session</p>
 
 
-<h4>Progress Bars</h4>
+<h3>Progress Bars</h3>
 <p>Using bootstrap 4</p>
-<p><strong>classes </strong>:.progress & .progress-bar</p>
-<a href="https://getbootstrap.com/docs/4.3/components/progress/">Referance</a><h4>Progress Bars</h4>
+<p><strong>classes </strong> .progress & .progress-bar</p>
+<a href="https://getbootstrap.com/docs/4.3/components/progress/">Referance</a>
 
-<h4>Icons</h4>
+
+<h3>Icons</h3>
 <p>Using Font Awesome library</p>
 <a href="https://fontawesome.com/start">Font Awesome Website</a>
