@@ -31,6 +31,9 @@ border-top: 1px solid rgba(255,255,255,.1);
   background-image: url('/images/travel.jpg');
   height: 40vh;
 }
+.paragraph{
+  color: rgba(0, 0, 0, .6);
+}
 .progress{
   height: 1.75rem;
 }
@@ -38,10 +41,6 @@ border-top: 1px solid rgba(255,255,255,.1);
   text-align: left;
   padding-left: 2rem;
 }
-.paragraph{
-  color: rgba(0, 0, 0, .6);
-}
-
 .project-background{
   height: 50vh;
   background-repeat: no-repeat;
@@ -79,7 +78,6 @@ border-top: 1px solid rgba(255,255,255,.1);
 #project-three{
   background-image: url('/images/myPencil.jpg')
 }
-
 
 
 #social-list{

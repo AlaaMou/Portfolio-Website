@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const engine = require('ejs-mate');
 const flash = require('connect-flash');
-const session = require('express-session')
+const session = require('express-session');
 const favicon        = require('serve-favicon');
 const indexRouter = require('./routes/index');
 
@@ -13,20 +13,18 @@ const app = express();
 
 // use ejs-locals for all ejs templates
 app.engine('ejs', engine);
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-// favicon
+// use favicon
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
-// express session
+// express-session
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true
 }))
-
 // flash message
 app.use(flash());
 
@@ -36,7 +34,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// middleware
+// middleware function
 app.use(function(req, res, next){
   res.locals.success = req.flash('success');
   return next();
