@@ -16,9 +16,8 @@
 <h3>Progress Bars</h3>
 <p>Using bootstrap 4</p>
 <p><strong>classes </strong> .progress & .progress-bar</p>
-<a href="https://getbootstrap.com/docs/4.3/components/progress/">Referance</a>
+<a href="https://getbootstrap.com/docs/4.3/components/progress/" target="_blank">Referance</a>
 
 
 <h3>Icons</h3>
-<p>Using Font Awesome library</p>
-<a href="https://fontawesome.com/start">Font Awesome Website</a>
+<p>Using <a href="https://fontawesome.com/start" target="_blank">Font Awesome Library</a></p>
