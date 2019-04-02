@@ -8,7 +8,7 @@
 <p><strong>npm package </strong>:@sendgrid/mail</p>
 
 <h3>Flash Message</h3>
-<p>Using connect-flash & session</p>
+<p>Using connect-flash & express-session</p>
 <p><strong>npm package </strong>:connect-flash</p>
 <p><strong>npm package </strong>:express-session</p>
 
