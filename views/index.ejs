@@ -1,5 +1,169 @@
 <% layout('layouts/boilerplate') -%>
 
-<div class="jumbotron">
-  <h3>Alaa Moussa</h3>
+<!--First Section-->
+<div class="container-fluid text-light mx-0 background-box" id="first-section">
+  <% include layouts/brand %>
+  <% include layouts/navbar %>
+  
+  <!--Flash message-->
+  <% if(success && success.length){ %>
+     <div class="container px-0">
+       <div class="alert alert-light"  role="alert">
+         <p class="text-success"><%= success %></p>
+       </div>
+     </div>
+  <% } %>
+  
+  <div class="container">  
+  <div class="row">
+    <!--wide column-->
+    <div class="col-md-8 px-0 d-flex flex-column justify-content-end background-box" id="first-box">
+          <div class="box-content mx-3 my-3 mx-lg-5 my-lg-5">
+            <p class="font-weight-bold text-info mb-2">Web Development</p>
+            <h2>My Journey Of Coding</h2>
+            <h5 class="text-danger font-weight-bold">A continuous state of learning ...</h5>
+            <a class="btn btn-sm btn-info" href="#my-work">View my work</a>
+          </div>
+    </div>
+    <!--narrow column-->
+    <div class="col-md-4 px-0">
+      
+      <!--Turkish Language Box-->
+      <a href="https://turkish-with-100.herokuapp.com/" class="text-white" target="_blank">
+      <div id="second-box" class="d-flex flex-column justify-content-end background-box">
+        <div class="box-content mx-3 my-2">
+            <p class="font-weight-bold text-danger mb-1">Languages</p>
+            <h4>How I learned Turkish Language with 100 people</h4>
+        </div>
+      </div>
+      </a>
+      
+      <!--Travel Box -->
+      <a href="https://turkish-with-100.herokuapp.com/travel" class="text-white" target="_blank">
+      <div id="third-box" class="d-flex flex-column justify-content-end background-box">
+        <div class="box-content mx-3 my-2">
+            <p class="font-weight-bold text-success mb-1">Travel</p>
+            <h4>Where Have I Been To?</h4>
+        </div>
+      </div>
+      </a>
+      
+    </div>
+  </div>
+  </div>
 </div>
+
+<!--Second Section-->
+<div class="container my-5">
+  <div class="row">
+    <!--My Personal Photo Part-->
+    <div class="col-lg-6 my-2">
+      <img src="/images/me.jpeg" class="img-fluid rounded px-5">
+    </div>
+    <!--About Me Part-->
+    <div class="col-lg-6 my-2 d-flex flex-column justify-content-center" id="code">
+      <div class="container">
+        <h2 class="text-center mb-3 text-info">About Me</h2>
+        <p class="text-left paragraph">I'm Alaa Moussa from Egypt.Currently, I'm living in Turkey.
+        I am an ex petroleum engineer who turned into a self-taught web developer.I am in a continuous state of learning.</p>
+        <a href="#contact" id="together">Let's work together <<</a>
+      </div>
+       <!--Progress bars-->
+      <div class="container my-2">
+        <div class="progress my-3">
+         <div class="progress-bar bg-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="80">HTML</div>
+        </div>
+        <div class="progress my-3">
+         <div class="progress-bar bg-dark" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="65">CSS</div>
+        </div>
+        <div class="progress my-3">
+         <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="65">Bootstrap 4</div>
+        </div>
+        <div class="progress my-3">
+         <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="60">Javascript</div>
+        </div>
+        <div class="progress my-3">
+         <div class="progress-bar bg-dark" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="70">jQuery</div>
+        </div>
+        <div class="progress my-3">
+         <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="50">Node js</div>
+        </div>
+        <div class="progress my-3">
+         <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="60">Express</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!--Projects Section-->
+
+<div class="bg-light mt-5 py-md-5" id="my-work">
+  <h3 class="text-center text-danger py-5">My Recent Projects</h3>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-4 project-background d-flex flex-column justify-content-center" id="project-one">
+        <div class="content text-center">
+          <p>Learn Turkish With 100</p>
+          <a class="btn btn-info" href="https://turkish-with-100.herokuapp.com/" target="_blank">Visit Website</a>
+        </div>
+      </div>
+      
+      <div class="col-md-4 project-background d-flex flex-column justify-content-center" id="project-two">
+        <div class="content text-center">
+          <p>Zahra Amini Website</p>
+          <a class="btn btn-info" href="https://miss-lemon.herokuapp.com/" target="_blank">Visit Website</a>
+        </div>
+      </div>
+      
+      <div class="col-md-4 project-background d-flex flex-column justify-content-center" id="project-three">
+        <div class="content text-center">
+          <p>myPencil Art Website</p>
+          <a class="btn btn-info" href="https://my-pencil.herokuapp.com/" target="_blank">Visit Website</a>
+        </div>
+      </div>
+   
+      
+    </div>
+  </div>
+</div>
+
+<!--Start of Contact Section-->
+<div class="bg-dark text-light mb-0" id="contact">
+   <div class="container py-5">
+    <h3 class="mb-0 text-center">Contact</h3>
+    <p class="text-info text-center">Have a question or want to work together?</p>
+    <div>
+      
+      <form class="mx-auto" action="/contact" method="POST" id="email-form">
+         <div class="form-group">
+           <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter Your Email" name="email" required>
+           <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+           <input type="text" class="form-control" id="name" placeholder="Full Name" name="name" required>
+         </div>
+        <div class="form-group">
+         <label for="exampleFormControlTextarea1">Message</label>
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" name="message" required></textarea>
+        </div>
+      
+         <button type="submit" class="btn btn-primary" title="Send"> <i class="far fa-envelope fa-lg"></i></button>
+      </form>
+           </div>
+  </div>
+</div>
+
+ <!-- Start of Footer -->
+    <div class="text-light text-center mb-0 pb-3" style="background:#191515">
+        <p class="font-weight-light pt-5 mb-0">All Rights Reserved | Alaa Moussa 2019 <i class="fas fa-copyright"></i></p>
+        <!--Social Media-->
+        <p class="mt-1">
+          <a class="text-light" href="https://www.facebook.com/alaa.ahmed.moussa" target="_blank" title="facebook"><i class="fab fa-facebook-square"></i></a>
+          <a class="ml-1 text-light" href="https://www.instagram.com/3laamoussa/?hl=en" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
+          <a class="ml-1 text-light" href="https://www.linkedin.com/in/alaa-moussa-3483ab77/" target="_blank" title="linkedin"><i class="fab fa-linkedin"></i></a>
+          <a class="ml-1 text-light" href="https://github.com/AlaaMou" target="_blank" title="github"><i class="fab fa-github"></i></a>
+        </p>
+    </div>
