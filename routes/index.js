@@ -9,6 +9,12 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+/* GET Travel page. */
+router.get('/travel', function(req, res, next) {
+  res.render('travel');
+});
+
+
 /* POST Email Form */
 router.post('/contact', function(req, res, next){
     const msg = {

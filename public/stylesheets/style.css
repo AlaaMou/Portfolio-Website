@@ -98,3 +98,25 @@ border-top: 1px solid rgba(255,255,255,.1);
     display: inline-block; 
   }
 }
+
+
+
+/*Travel Page CSS*/
+#travel-first-section{
+  background-image: url('https://images.unsplash.com/photo-1456425731181-2152d80d946c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80');
+
+}
+
+#travel-first-box{
+    background-image: url('/images/travel/iran.jpg');
+    min-height: 60vh;
+}
+#travel-second-box{
+    background-image: url('/images/travel/korea.jpg');
+    height: 40vh;
+}
+#travel-third-box{
+    background-image: url('/images/travel/malaysia.jpg');
+    height: 40vh;
+}
+
